@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span {
+    font-family: "Source Sans Pro";
+}
+
+.limiter {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-nombre {
+    margin: 0;
+    font-size: 26px;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    margin: 0 60px 0 0;
+    list-style: none;
+    font-size: 21px;
+}
+
+.menu-item>a {
+    text-decoration: none;
+    color: #707070;
+}
+
+.img-card {
+    width: 239px;
+}
+
+.menu,
+.container,
+.main {
+    display: flex;
+}
+
+.sidenav-list {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 767px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px 0 0 16px;
+}
+
+.sidenav {
+    width: 154px;
+    padding: 48px 0 0 0;
+}
+
+.sidenav-list__item {
+    list-style: none;
+    padding: 12px 0 0 0;
+}
+
+.sidenav-list__item>a {
+    text-decoration: none;
+    list-style: none;
+    color: #707070;
+    font-size: 18px;
+}
+
+.project {
+    padding: 0 0 20px 0;
+}
+
+.card {
+    border: 1px solid #F9F9FA;
+}
