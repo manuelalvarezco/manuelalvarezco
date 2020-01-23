@@ -1,0 +1,66 @@
+body {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span {
+    font-family: "Source Sans Pro";
+}
+
+.content {
+    display: flex;
+    margin: 80px 0 0 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-size: 38px;
+    font-family: "Open Sans";
+    color: #254171;
+}
+
+.mt-10 {
+    margin: 10px 0 0 0;
+}
+
+.caja {
+    width: 582px;
+}
+
+.description>p {
+    margin: 12px 0 0 0;
+}
+
+.content-images {
+    display: flex;
+    margin: 32px 0 0 0;
+}
+
+.img01 {
+    margin: 0 70px 0 0;
+}
+
+.slider {
+    margin: 20px 0 20px 0;
+    width: 640px;
+    margin: auto;
+}
+
+.swiper-container {
+    width: 100%;
+    margin: 80px 0 0 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+}
