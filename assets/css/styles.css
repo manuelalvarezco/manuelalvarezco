@@ -12,16 +12,35 @@ span {
     font-family: "Source Sans Pro";
 }
 
+.menu,
+.container,
+.main,
+.flex {
+    display: flex;
+}
+
+.card a,
+.card a:visited,
+.category .heading a:visited,
+.category .heading .more a,
+.site a {
+    text-decoration: none;
+}
+
 .limiter {
     max-width: 1000px;
     margin: 0 auto;
+    background-color: #fff;
 }
 
 .header {
-    height: 70px;
+    top: 0;
+    background-color: #fff;
+    width: 1000px;
+    position: fixed;
     display: flex;
-    align-items: center;
     justify-content: space-between;
+    height: 70px;
 }
 
 .logo {
@@ -29,9 +48,36 @@ span {
     flex-direction: column;
 }
 
-.logo-nombre {
+.logo-name {
     margin: 0;
     font-size: 26px;
+    color: #254171;
+}
+
+.logo-profession,
+.menu-item,
+.menu-item>a,
+.sidenav-list__item>a,
+.card-subtitle {
+    color: #085E3C;
+}
+
+.menu-item>a,
+.sidenav-list__item>a {
+    font-family: "Source Sans Pro";
+}
+
+.sidenav-list__item>a:link:active,
+.sidenav-list__item>a:visited:active {
+    color: #254171;
+    font-weight: bold;
+}
+
+.menu-item>a:link:active,
+.menu-item>a:visited:active {
+    color: #254171;
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .menu {
@@ -41,22 +87,15 @@ span {
 .menu-item {
     margin: 0 60px 0 0;
     list-style: none;
-    font-size: 21px;
+    font-size: 16px;
 }
 
 .menu-item>a {
     text-decoration: none;
-    color: #707070;
 }
 
-.img-card {
-    width: 239px;
-}
-
-.menu,
-.container,
-.main {
-    display: flex;
+.container {
+    margin-top: 127px
 }
 
 .sidenav-list {
@@ -64,16 +103,23 @@ span {
     padding: 0;
 }
 
+.sidenav {
+    width: 154px;
+    height: 100%;
+    position: fixed;
+}
+
 .main {
     width: 767px;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 60px 0 0 16px;
+    padding: 0 0 0 15px;
+    margin-left: 185px;
 }
 
-.sidenav {
-    width: 154px;
-    padding: 48px 0 0 0;
+.flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .sidenav-list__item {
@@ -84,7 +130,6 @@ span {
 .sidenav-list__item>a {
     text-decoration: none;
     list-style: none;
-    color: #707070;
     font-size: 18px;
 }
 
@@ -94,4 +139,19 @@ span {
 
 .card {
     border: 1px solid #F9F9FA;
+    width: 360px;
+}
+
+.card-img {
+    width: 360px;
+}
+
+.card-title {
+    color: #545658;
+    font-size: 17px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: #929292;
 }
