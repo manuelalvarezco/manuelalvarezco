@@ -5,11 +5,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>contacto manuelalvarez</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <title>manuelalvarezco</title>
 </head>
 
 <body>
-    <h1>Contacto ..</h1>
+    <div class="limiter">
+        <header class="header">
+            <div class="logo">
+                <h1 class="logo-name">Manuel Álvarez</h1>
+                <span class="logo-profession">Frontend Developer</span>
+            </div>
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="index.html">Inicio</a></li>
+                    <li class="menu-item"><a href="about.html">Acerca de</a></li>
+                    <li class="menu-item"><a href="contact.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="container">
+
+            <section class="information">
+                <h2 class="titulo">Hagamos algo juntos</h2>
+                <p class="subtitulo">La ilusión de participar en proyectos colaborativos siempre me ha llamado mucho la atención, aunque nunca he tenido la oportunidad de ayudar en alguno siempre voy a estar abierto a estos retos, si tienes algún proyecto en el que te pueda
+                    ayudar no dudes en escribirme.</p>
+                <img width="470" src="assets/images/trabajemos.png" alt="trabajemos-juntos">
+            </section>
+            <section class="formulario">
+                <form class="form">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input class="input-group" type="text" placeholder="Ingresa tu nombre" id="nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <input class="input-group" type="email" placeholder="Ingresa tu correo" id="correo">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea class="textarea-group" name="mensaje" id="mensaje" cols="44" rows="8"></textarea>
+                    </div>
+                    <div class="group-terminos">
+                        <div class="item-termino">
+                            <input class="custom-control__input" type="checkbox" name="terminos" id="terminos">
+                            <label for="terminos">Acepto los términos y condiciones</p>
+                        </div>
+                        <button class="btn btn-primary">Enviar</button>
+                    </div>
+                </form>
+            </section>
+        </div>
+
+        <footer class="footer">
+            footer
+        </footer>
+    </div>
+
 </body>
 
 </html>

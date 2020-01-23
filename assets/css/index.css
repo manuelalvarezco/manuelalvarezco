@@ -1,0 +1,67 @@
+.limiter {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name {
+    margin: 0;
+    font-size: 26px;
+    color: #254171;
+}
+
+.main {
+    width: 767px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 0 0 15px;
+    margin-left: 185px;
+}
+
+.flex {
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.sidenav-list__item {
+    list-style: none;
+    padding: 12px 0 0 0;
+}
+
+.sidenav-list__item>a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
+}
+
+.project {
+    padding: 0 0 20px 0;
+}
+
+.card {
+    border: 1px solid #F9F9FA;
+    width: 360px;
+}
+
+.card>a {
+    text-decoration: none;
+}
+
+.card-img {
+    width: 360px;
+}
+
+.card-title {
+    color: #545658;
+    font-size: 17px;
+}
+
+.card-subtitle {
+    font-size: 12px;
+    color: #929292;
+}
