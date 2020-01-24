@@ -13,6 +13,23 @@ span {
     font-family: "Source Sans Pro";
 }
 
+.limiter {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.logo {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-name {
+    margin: 10px 0 0 0;
+    font-size: 26px;
+    color: #254171;
+}
+
 .menu,
 .container,
 .main,
@@ -64,7 +81,7 @@ span {
 .titulo {
     font-size: 38px;
     font-family: "Open Sans";
-    color: #254171;
+    color: #334C70;
 }
 
 .subtitulo {
@@ -84,7 +101,7 @@ span {
 
 .btn-primary {
     color: white;
-    background-color: #085E3C;
+    background-color: #E59E20;
 }
 
 label {
@@ -127,26 +144,15 @@ label {
 
 .logo-profession,
 .menu-item,
-.menu-item>a,
-.sidenav-list__item>a,
-.card-subtitle {
-    color: #545658;
+.menu-item>a {
+    color: #BC7B08;
+}
+
+.sidenav-list__item>a {
+    color: #223A56;
 }
 
 .menu-item>a,
 .sidenav-list__item>a {
     font-family: "Source Sans Pro";
-}
-
-.sidenav-list__item>a:link:active,
-.sidenav-list__item>a:visited:active {
-    color: #254171;
-    font-weight: bold;
-}
-
-.menu-item>a:link:active,
-.menu-item>a:visited:active {
-    color: #254171;
-    font-weight: bold;
-    text-decoration: underline;
 }
