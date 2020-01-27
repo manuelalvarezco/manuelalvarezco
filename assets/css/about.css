@@ -1,6 +1,5 @@
 .content {
     display: flex;
-    margin: 80px 0 0 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -10,10 +9,6 @@
     margin: 10px 0 0 0;
 }
 
-.caja {
-    width: 582px;
-}
-
 .description>p {
     margin: 12px 0 0 0;
 }
@@ -21,16 +16,6 @@
 .content-images {
     display: flex;
     margin: 32px 0 0 0;
-}
-
-.img01 {
-    margin: 0 70px 0 0;
-}
-
-.slider {
-    margin: 20px 0 20px 0;
-    width: 640px;
-    margin: auto;
 }
 
 .caja>p {

@@ -88,6 +88,10 @@ span {
     width: 600px;
 }
 
+.caja {
+    width: 75%;
+}
+
 .btn {
     height: 39px;
     border-radius: 19.5px;
@@ -157,6 +161,19 @@ label {
 }
 
 
+/*about*/
+
+.slider {
+    margin: 20px 0 20px 0;
+    width: 640px;
+    margin: auto;
+}
+
+.img01 {
+    margin: 0 70px 0 0;
+}
+
+
 /* Desktop firts, comenzamos desde el Media query más grande*/
 
 
@@ -183,6 +200,7 @@ label {
     .project {
         width: 45%;
     }
+    /* about */
 }
 
 @media screen and (max-width:1024px) {
@@ -197,9 +215,11 @@ label {
     .project {
         width: 45%;
     }
+    /* about */
 }
 
 @media screen and (max-width:767px) {
+    /* index */
     .logo {
         margin: 0 0 0 15px;
         align-items: center;
@@ -210,6 +230,13 @@ label {
     .flex {
         justify-content: space-around;
         flex-wrap: wrap;
+    }
+    /*about*/
+    .certificates {
+        margin: 0 0 0 15px;
+    }
+    .content {
+        margin: 0 0 0 15px;
     }
 }
 
@@ -248,6 +275,27 @@ label {
         justify-content: space-around;
     }
     */
+    /*about*/
+    .caja {
+        width: 100%;
+    }
+    .img02 {
+        display: none;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .certificates {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slider {
+        width: 100%;
+    }
+    .img01 {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -259,5 +307,26 @@ label {
     }
     .sidenav-list {
         text-align: center;
+    }
+    /* about */
+    .caja {
+        width: 100%;
+    }
+    .img02 {
+        display: none;
+    }
+    .titulo {
+        text-align: center;
+    }
+    .certificates {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .slider {
+        width: 100%;
+    }
+    .img01 {
+        margin: 0;
     }
 }
