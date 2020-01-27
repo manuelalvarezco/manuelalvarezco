@@ -1,5 +1,4 @@
 .formulario {
-    margin: 0 0 0 75px;
     font-family: "Open Sans";
 }
 
@@ -9,10 +8,11 @@
     padding: 10px 0 0 10px;
     margin: 10px 0 10px 0;
     font-family: "Open Sans";
+    width: 100%;
 }
 
 .group-terminos {
-    margin: 29px 0 0 0;
+    margin: 10px 0 0 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -36,6 +36,12 @@
     margin: 0 10px 0 0;
 }
 
-.information>p {
-    color: #3F5972;
+.formulario {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario-image {
+    object-fit: contain;
+    width: 50%;
 }

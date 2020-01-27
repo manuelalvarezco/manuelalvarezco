@@ -173,6 +173,14 @@ label {
     margin: 0 70px 0 0;
 }
 
+.information>p {
+    color: #3F5972;
+    width: 75%;
+}
+
+
+/* contact */
+
 
 /* Desktop firts, comenzamos desde el Media query más grande*/
 
@@ -238,6 +246,13 @@ label {
     .content {
         margin: 0 0 0 15px;
     }
+    /* contatc */
+    .container {
+        margin: 0 15px;
+    }
+    .form {
+        margin: 0 15px 0 0;
+    }
 }
 
 @media screen and (max-width:480px) {
@@ -296,6 +311,13 @@ label {
     .img01 {
         margin: 0;
     }
+    /* contact */
+    .information>p {
+        width: 100%;
+    }
+    .formulario-image {
+        display: none;
+    }
 }
 
 @media screen and (max-width:320px) {
@@ -328,5 +350,15 @@ label {
     }
     .img01 {
         margin: 0;
+    }
+    /* contact */
+    .container {
+        margin: 0 15px;
+    }
+    .information>p {
+        width: 100%;
+    }
+    .formulario-image {
+        display: none;
     }
 }
