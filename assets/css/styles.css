@@ -13,8 +13,13 @@ span {
     font-family: "Source Sans Pro";
 }
 
+.btn-filtro {
+    display: none;
+}
+
 .limiter {
     max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
     background-color: #fff;
 }
@@ -30,17 +35,27 @@ span {
     color: #254171;
 }
 
-.menu,
 .container,
 .main,
-.flex {
+.flex,
+.menu {
     display: flex;
 }
 
-.menu-item {
-    margin: 0 40px 0 0;
-    list-style: none;
-    font-size: 16px;
+.container {
+    flex-wrap: wrap;
+}
+
+.sidenav {
+    width: 15%;
+}
+
+.main {
+    width: 85%;
+}
+
+.projects {
+    margin-left: 15px;
 }
 
 .menu-item>a {
@@ -48,32 +63,16 @@ span {
 }
 
 .sidenav-list {
-    margin: 0;
+    margin: 0 15px;
     padding: 0;
-}
-
-.sidenav {
-    width: 154px;
-    height: 100%;
-    position: fixed;
-}
-
-.container {
-    margin-top: 127px
-}
-
-.limiter {
-    max-width: 1000px;
-    margin: 0 auto;
-    background-color: #fff;
 }
 
 .header {
     top: 0;
     background-color: #fff;
-    width: 1000px;
-    position: fixed;
+    max-width: 1000px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     height: 70px;
 }
@@ -155,4 +154,110 @@ label {
 .menu-item>a,
 .sidenav-list__item>a {
     font-family: "Source Sans Pro";
+}
+
+
+/* Desktop firts, comenzamos desde el Media query más grande*/
+
+
+/* max-width: igual o menor
+   min-width: igual o mayor
+*/
+
+@media screen and (min-width:1024px) {
+    .menu-item {
+        margin: 0 40px 0 0;
+        list-style: none;
+        font-size: 16px;
+    }
+    .container {
+        display: flex;
+    }
+    .main,
+    .flex {
+        flex-wrap: wrap;
+    }
+    .flex {
+        justify-content: space-around;
+    }
+    .project {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .menu-item {
+        margin: 0 40px 0 0;
+        list-style: none;
+        font-size: 16px;
+    }
+    .container {
+        display: flex;
+    }
+    .project {
+        width: 45%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .logo {
+        margin: 0 0 0 15px;
+        align-items: center;
+    }
+    .main {
+        flex-wrap: wrap;
+    }
+    .flex {
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .logo-name,
+    .logo-profession,
+    .sidenav-list__item>a,
+    .menu-item>a {
+        color: white;
+    }
+    .header {
+        height: initial;
+        background-color: #254171;
+        justify-content: space-around;
+    }
+    .main {
+        width: 100%;
+    }
+    .sidenav-list {
+        display: none;
+    }
+    .sidenav {
+        display: none;
+    }
+    .project {
+        width: 100%;
+    }
+    /*
+    .sidenav {
+        background-color: #254171;
+        margin: 0;
+        padding: 5px 0;
+    }
+    .sidenav-list {
+        display: flex;
+        justify-content: space-around;
+    }
+    */
+}
+
+@media screen and (max-width:320px) {
+    .menu-item {
+        margin: 0 33px 0 0;
+    }
+    .sidenav-list {
+        display: none;
+    }
+    .sidenav-list {
+        text-align: center;
+    }
 }
