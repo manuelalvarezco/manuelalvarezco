@@ -224,6 +224,10 @@ label {
         width: 45%;
     }
     /* about */
+    /* contact */
+    .container-contact {
+        margin: 0 15px;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -247,7 +251,7 @@ label {
         margin: 0 0 0 15px;
     }
     /* contatc */
-    .container {
+    .container-contact {
         margin: 0 15px;
     }
     .form {
@@ -320,7 +324,7 @@ label {
     }
 }
 
-@media screen and (max-width:320px) {
+@media screen and (max-width:320px) and (min-width:480px) {
     .menu-item {
         margin: 0 33px 0 0;
     }
@@ -352,7 +356,7 @@ label {
         margin: 0;
     }
     /* contact */
-    .container {
+    .container-contact {
         margin: 0 15px;
     }
     .information>p {
