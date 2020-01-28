@@ -139,9 +139,8 @@ label {
     width: 100%;
     height: 33px;
     border-radius: 3px;
-    margin: 10px 0 10px 0;
+    margin: 10px 0;
     font-size: 16px;
-    padding: 0 0 0 10px;
     font-family: "Open Sans";
 }
 
@@ -191,13 +190,26 @@ label {
     margin: 0 70px 0 0;
 }
 
+.information {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .information>p {
     color: #3F5972;
     width: 75%;
+    text-align: justify;
 }
 
 
 /* contact */
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 
 
 /* Desktop firts, comenzamos desde el Media query más grande*/
@@ -215,6 +227,11 @@ label {
         margin-left: 15px;
     }
     .certificates {
+        margin: 0 15px;
+    }
+    /* contact */
+    .formulario {
+        justify-content: space-around;
         margin: 0 15px;
     }
 }
@@ -268,5 +285,13 @@ label {
     .slider {
         margin: auto;
         width: auto;
+    }
+    /* contact */
+    .titulo {
+        font-size: 2em;
+    }
+    .formulario {
+        justify-content: center;
+        margin: 0 15px;
     }
 }
