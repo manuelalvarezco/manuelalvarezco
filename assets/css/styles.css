@@ -250,6 +250,9 @@ label {
         width: auto;
     }
     /*about*/
+    .img01 {
+        margin: 0;
+    }
     .img02 {
         display: none;
     }
