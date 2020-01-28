@@ -27,12 +27,27 @@ span {
 .logo {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .logo-name {
     margin: 10px 0 0 0;
     font-size: 26px;
     color: #254171;
+}
+
+.menu-item {
+    list-style: none;
+}
+
+.menu-item>a {
+    text-decoration: none;
+    padding: 15px;
+}
+
+.sidenav-list {
+    margin: 0 15px;
+    padding: 0;
 }
 
 .container,
@@ -42,8 +57,15 @@ span {
     display: flex;
 }
 
-.container {
+.flex,
+.container,
+.main {
     flex-wrap: wrap;
+}
+
+.flex {
+    justify-content: space-between;
+    margin: 0 15px;
 }
 
 .sidenav {
@@ -54,19 +76,6 @@ span {
     width: 85%;
 }
 
-.projects {
-    margin-left: 15px;
-}
-
-.menu-item>a {
-    text-decoration: none;
-}
-
-.sidenav-list {
-    margin: 0 15px;
-    padding: 0;
-}
-
 .header {
     top: 0;
     background-color: #fff;
@@ -74,7 +83,16 @@ span {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     height: 70px;
+}
+
+.projects {
+    margin-left: 15px;
+}
+
+.project {
+    width: 48%;
 }
 
 .titulo {
@@ -189,77 +207,19 @@ label {
    min-width: igual o mayor
 */
 
-@media screen and (min-width:1024px) {
-    .menu-item {
-        margin: 0 40px 0 0;
-        list-style: none;
-        font-size: 16px;
-    }
-    .container {
-        display: flex;
-    }
-    .main,
-    .flex {
-        flex-wrap: wrap;
-    }
-    .flex {
-        justify-content: space-around;
-    }
-    .project {
-        width: 45%;
-    }
-    /* about */
-}
 
-@media screen and (max-width:1024px) {
-    .menu-item {
-        margin: 0 40px 0 0;
-        list-style: none;
-        font-size: 16px;
-    }
-    .container {
-        display: flex;
-    }
-    .project {
-        width: 45%;
-    }
-    /* about */
-    /* contact */
-    .container-contact {
-        margin: 0 15px;
-    }
-}
+/* desktop */
 
-@media screen and (max-width:767px) {
-    /* index */
+@media screen and (max-width:1024px) and (min-width:768px) {
     .logo {
-        margin: 0 0 0 15px;
-        align-items: center;
-    }
-    .main {
-        flex-wrap: wrap;
-    }
-    .flex {
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    /*about*/
-    .certificates {
-        margin: 0 0 0 15px;
-    }
-    .content {
-        margin: 0 0 0 15px;
-    }
-    /* contatc */
-    .container-contact {
-        margin: 0 15px;
-    }
-    .form {
-        margin: 0 15px 0 0;
+        margin-left: 15px;
     }
 }
 
-@media screen and (max-width:480px) {
+
+/*smartphone*/
+
+@media screen and (max-width:767px) and (min-width:320px) {
     .logo-name,
     .logo-profession,
     .sidenav-list__item>a,
@@ -267,102 +227,23 @@ label {
         color: white;
     }
     .header {
-        height: initial;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
         background-color: #254171;
-        justify-content: space-around;
+    }
+    .menu {
+        justify-content: center;
+        padding: 0;
+    }
+    .sidenav {
+        display: none;
     }
     .main {
-        width: 100%;
-    }
-    .sidenav-list {
-        display: none;
-    }
-    .sidenav {
-        display: none;
+        width: auto;
     }
     .project {
-        width: 100%;
-    }
-    /*
-    .sidenav {
-        background-color: #254171;
-        margin: 0;
-        padding: 5px 0;
-    }
-    .sidenav-list {
-        display: flex;
-        justify-content: space-around;
-    }
-    */
-    /*about*/
-    .caja {
-        width: 100%;
-    }
-    .img02 {
-        display: none;
-    }
-    .titulo {
-        text-align: center;
-    }
-    .certificates {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .slider {
-        width: 100%;
-    }
-    .img01 {
-        margin: 0;
-    }
-    /* contact */
-    .information>p {
-        width: 100%;
-    }
-    .formulario-image {
-        display: none;
-    }
-}
-
-@media screen and (max-width:320px) and (min-width:480px) {
-    .menu-item {
-        margin: 0 33px 0 0;
-    }
-    .sidenav-list {
-        display: none;
-    }
-    .sidenav-list {
-        text-align: center;
-    }
-    /* about */
-    .caja {
-        width: 100%;
-    }
-    .img02 {
-        display: none;
-    }
-    .titulo {
-        text-align: center;
-    }
-    .certificates {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    .slider {
-        width: 100%;
-    }
-    .img01 {
-        margin: 0;
-    }
-    /* contact */
-    .container-contact {
-        margin: 0 15px;
-    }
-    .information>p {
-        width: 100%;
-    }
-    .formulario-image {
-        display: none;
+        width: auto;
     }
 }
