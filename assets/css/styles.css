@@ -1,3 +1,31 @@
+@font-face {
+    font-family: 'icomoon';
+    src: url('../../fonts/icomoon.eot?vnwne3');
+    src: url('../../fonts/icomoon.eot?vnwne3#iefix') format('embedded-opentype'), url('../fonts/icomoon.ttf?vnwne3') format('truetype'), url('../fonts/icomoon.woff?vnwne3') format('woff'), url('../fonts/icomoon.svg?vnwne3#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change ../fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-menu:before {
+    content: "\e900";
+}
+
 body {
     margin: 0;
 }
@@ -48,6 +76,8 @@ span {
 .sidenav-list {
     margin: 0 15px;
     padding: 0;
+    position: sticky;
+    top: 0;
 }
 
 .container,
@@ -85,6 +115,12 @@ span {
     justify-content: space-between;
     align-items: center;
     height: 70px;
+}
+
+.sidenav-list__item>a {
+    text-decoration: none;
+    list-style: none;
+    font-size: 18px;
 }
 
 .footer {
@@ -185,6 +221,24 @@ label {
     font-family: "Source Sans Pro";
 }
 
+.burger-menu {
+    display: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #ccc;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    top: 0;
+    background-color: #254171;
+    color: white;
+    border: 1px solid #ccc;
+}
+
 
 /*about*/
 
@@ -265,11 +319,110 @@ label {
         justify-content: center;
         padding: 0;
     }
+    .main {
+        width: auto;
+    }
+    .burger-menu {
+        display: block;
+    }
     .sidenav {
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: rgba(37, 65, 113, .9);
+        z-index: 3;
+        transition: .3s;
+    }
+    .sidenav-list {
+        text-align: center;
+    }
+    .sidenav-list__item>a {
+        height: 40px;
+        text-decoration: underline;
+        font-size: 2em;
+    }
+    .sidenav.is-active {
+        left: 0;
+    }
+    .project {
+        width: auto;
+    }
+    /*about*/
+    .img01 {
+        margin: 0;
+    }
+    .img02 {
         display: none;
+    }
+    .certificates {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-images {
+        margin: 0;
+    }
+    .slider {
+        margin: auto;
+        width: auto;
+    }
+    /* contact */
+    .titulo {
+        font-size: 2em;
+    }
+    .formulario {
+        justify-content: center;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width:319px) {
+    .logo-name,
+    .logo-profession,
+    .sidenav-list__item>a,
+    .menu-item>a {
+        color: white;
+    }
+    .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        background-color: #254171;
+    }
+    .menu {
+        justify-content: center;
+        padding: 0;
     }
     .main {
         width: auto;
+    }
+    .burger-menu {
+        display: block;
+    }
+    .sidenav {
+        left: -100vw;
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        background-color: rgba(37, 65, 113, .9);
+        z-index: 3;
+        transition: .3s;
+    }
+    .sidenav-list {
+        text-align: center;
+    }
+    .sidenav-list__item>a {
+        height: 40px;
+        text-decoration: underline;
+        font-size: 2em;
+    }
+    .sidenav.is-active {
+        left: 0;
     }
     .project {
         width: auto;

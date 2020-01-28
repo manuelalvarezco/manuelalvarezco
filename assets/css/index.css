@@ -3,12 +3,6 @@
     padding: 12px 0 0 0;
 }
 
-.sidenav-list__item>a {
-    text-decoration: none;
-    list-style: none;
-    font-size: 18px;
-}
-
 .card {
     border: 1px solid #F9F9FA;
     width: 100%;
