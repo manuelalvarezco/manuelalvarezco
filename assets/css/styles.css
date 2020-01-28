@@ -87,6 +87,14 @@ span {
     height: 70px;
 }
 
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #254171;
+    ;
+    color: white;
+}
+
 .projects {
     margin-left: 15px;
 }
