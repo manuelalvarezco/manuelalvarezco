@@ -214,6 +214,9 @@ label {
     .logo {
         margin-left: 15px;
     }
+    .certificates {
+        margin: 0 15px;
+    }
 }
 
 
@@ -244,6 +247,23 @@ label {
         width: auto;
     }
     .project {
+        width: auto;
+    }
+    /*about*/
+    .img02 {
+        display: none;
+    }
+    .certificates {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .content-images {
+        margin: 0;
+    }
+    .slider {
+        margin: auto;
         width: auto;
     }
 }
